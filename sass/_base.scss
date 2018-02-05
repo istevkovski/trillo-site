@@ -18,6 +18,14 @@
   --line: 1px solid var(--color-gray-light-2);
 }
 
+$bpoint-xl: 75em; //1200px / 16 = 75em
+$bpoint-l: 68.75em;
+$bpoint-m: 56.25em;
+$bpoint-s: 37.5em;
+$bpoint-xs: 31.25em;
+$bpoint-xxs: 18.75em; //300px
+
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +40,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px , 10px/16px = 62.5%
+
+  @media only screen and (max-width: $bpoint-l) {
+    font-size: 50%;
+  }
 }
 
 body {
